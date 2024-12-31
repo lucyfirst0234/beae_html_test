@@ -53,6 +53,7 @@
     line-height: 26px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #000000
 
 }
 
@@ -102,6 +103,17 @@
     border-radius: 50%;
 }
 
+.home_navi {
+
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
 
 .page_title h2 {
     font-family: Sansita;
@@ -171,7 +183,17 @@
 
 .contactUS_button {
     background: #EC80A0;
-    padding: 10px 20px;
+    color: #FFFFFF;
+    padding: 17px 40px;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .label_proudOf {
@@ -192,8 +214,8 @@
 }
 
 .proud_child {
-    max-width: 250px;
-    width: 100%;
+    max-width: 23%;
+    /* width: 100%; */
 }
 
 .number_child {
@@ -277,11 +299,12 @@
 }
 
 .flex_info_parent {
+    /* gap: 20px; */
     justify-content: space-between;
 }
 
 .info_team_child {
-    max-width: 250px;
+    max-width: 23%;
 }
 
 .name_child_team {
@@ -517,9 +540,9 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width:  992px) {
     .navbar-brand {
         position: relative;
-        right: 27%;
+        right: 33%;
     }
 }
