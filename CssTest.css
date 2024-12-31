@@ -285,6 +285,10 @@
     top: 34px;
     height: 100%;
     background-color: #FDF4F7;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .label_about {
@@ -414,7 +418,10 @@
 
 .input-group input {
     border: 1px solid pink;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .input-group span {
@@ -436,7 +443,7 @@
 }
 
 .subcribe_button {
-    padding: 10px;
+    padding: 10px 20px;
     font-family: Open Sans;
     font-size: 17px;
     font-weight: 700;
@@ -447,6 +454,10 @@
     text-decoration-skip-ink: none;
     background-color: #EC80A0;
     color: #FFFFFF;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
@@ -567,10 +578,12 @@
     .navbar-brand {
         position: static;
     }
-    .text_left_CTA{
+
+    .text_left_CTA {
         font-size: 22px;
         text-align: center;
     }
+
     .left_CTA_container {
         display: flex;
         flex-direction: column;
@@ -583,4 +596,14 @@
         position: relative;
         right: 34%;
     }
+}
+
+@media (max-width: 1200px) {
+    /* .content_about_image {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    } */
+
 }
